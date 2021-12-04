@@ -1,0 +1,21 @@
+https://backlog.com/git-tutorial/tw/stepup/stepup1_1.html
+
+git init
+git status
+git add <file name>                        增加追蹤檔案或要被儲存修改的檔案
+git restore --staged <file name>           取消add
+git commit -m "message"                    提交一份有被add的檔案
+git commit
+git remote add <name> <url>                新增一個remote連接到local 將remote url (repository) 命名為 <name>
+git remote                                 列出所有remote (-v 顯示網址)
+git push -u <remote name> <branch name>    將branch推到remote (-u:設定default，若有打-u，以後打git push就ok了)
+
+git clone <url>                            從url複製一份整個repository至本地端
+git pull                                   向遠端更新本地端
+git branch -a                              查看所有branch
+git branch <branch name>                   新增branch
+git checkout <branch name>                 切換branch
+git checkout -b <branch name>              新增並切換branch
+git branch -d <branch name>                刪除本地branch
+git push origin :<branch name>             刪除遠端branch
+git merge <branch name>                    將<branch name>合併到當前branch
